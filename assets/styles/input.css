@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Araboto_Font_Family";
+  src: url(../fonts/Araboto_Font_Family/ArabotoThin100.ttf);
+  font-weight: 100;
+  font-display: block;
+}
+@font-face {
+  font-family: "Araboto_Font_Family";
+  src: url(../fonts/Araboto_Font_Family/ArabotoLight300.ttf);
+  font-weight: 300;
+  font-display: block;
+}
+@font-face {
+  font-family: "Araboto_Font_Family";
+  src: url(../fonts/Araboto_Font_Family/ArabotoNormal400.ttf);
+  font-weight: 400;
+  font-display: block;
+}
+@font-face {
+  font-family: "Araboto_Font_Family";
+  src: url(../fonts/Araboto_Font_Family/ArabotoMedium500.ttf);
+  font-weight: 500;
+  font-display: block;
+}
+@font-face {
+  font-family: "Araboto_Font_Family";
+  src: url(../fonts/Araboto_Font_Family/ArabotoBold600.ttf);
+  font-weight: 600;
+  font-display: block;
+}
+@font-face {
+  font-family: "Araboto_Font_Family";
+  src: url(../fonts/Araboto_Font_Family/ArabotoBlack800.ttf);
+  font-weight: 800;
+  font-display: block;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/inter/Inter-Regular.ttf);
+  font-weight: 400;
+  font-display: block;
+}
+.Inter {
+  font-family: "Inter";
+}
+body {
+  font-family: "Araboto_Font_Family";
+  color: #41393d;
+  background-color: #f8f4f3;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .text16 {
+    @apply lg:text-[1.11111111111vw] lg:leading-[1.66666666667vw];
+  }
+  .text14 {
+    @apply lg:text-[0.97222222222vw] lg:leading-[1.45833333333vw];
+  }
+  .text20 {
+    @apply lg:text-[1.38888888889vw] lg:leading-[1.73611111111vw];
+  }
+  .text18 {
+    @apply lg:text-[1.25vw] lg:leading-[1.875vw] f300;
+  }
+  .text20 {
+    @apply lg:text-[1.38888888889vw] lg:leading-[2.08333333333vw];
+  }
+  .text24 {
+    @apply lg:text-[1.66666666667vw] lg:leading-[2.5vw] f300;
+  }
+  .text36 {
+    @apply lg:text-[2.5vw] lg:leading-[3.75vw] uppercase;
+  }
+  .text42 {
+    @apply lg:text-[2.91666666667vw] lg:leading-[4.375vw] f500 uppercase;
+  }
+  .text52 {
+    @apply lg:text-[3.61111111111vw] lg:leading-[5.41666666667vw]  mtext24 f500 uppercase;
+  }
+  .mtext10 {
+    @apply text-[10px] leading-[15px];
+  }
+  .mtext14 {
+    @apply text-[14px] leading-[21px];
+  }
+  .mtext16 {
+    @apply text-[16px] leading-[24px];
+  }
+  .mtext18 {
+    @apply text-[18px] leading-[27px];
+  }
+  .mtext20 {
+    @apply text-[20px] leading-[30px];
+  }
+  .mtext24 {
+    @apply text-[24px] leading-[36px];
+  }
+  .mtext36 {
+    @apply text-[36px] leading-[54px];
+  }
+  .nav-links {
+    @apply text16 flex items-center lg:gap-x-[1.11111111111vw] uppercase;
+  }
+  .nav-links li {
+    @apply relative;
+  }
+  .nav-links li.active span,
+  .nav-links li:hover span {
+    @apply min-w-full w-full;
+  }
+  .nav-links li,
+  .nav-links li span {
+    @apply transition-all duration-300;
+  }
+  .nav-links li:hover {
+    @apply text-[#8F8A8E];
+  }
+  .nav-links li span {
+    @apply block absolute bottom-[-1.94444444444vw] left-[50%] translate-x-[-50%] border5 min-w-0 w-0 lg:h-[0.20833333333vw] bg-[#41393D];
+  }
+  .border5 {
+    @apply lg:rounded-[0.34722222222vw] rounded-[5px];
+  }
+  .border9 {
+    @apply lg:rounded-[0.625vw] rounded-[6px];
+  }
+  .f100 {
+    @apply font-[100];
+  }
+  .f300 {
+    @apply font-[300];
+  }
+  .f500 {
+    @apply font-[500];
+  }
+  .f600 {
+    @apply font-[600];
+  }
+  .f800 {
+    @apply font-[800];
+  }
+  .px43 {
+    @apply lg:px-[2.98611111111vw];
+  }
+  .mpx20 {
+    @apply px-[20px];
+  }
+  .mt32 {
+    @apply lg:mt-[1.38888888889vw];
+  }
+  .mt49 {
+    @apply lg:mt-[1.38888888889vw];
+  }
+  .mmt25 {
+    @apply mt-[10px];
+  }
+
+  .ltr .lrf1 {
+    @apply left-0;
+  }
+  .rtl .lrf1 {
+    @apply right-0;
+  }
+  .rtl .flipped {
+    @apply scale-x-[-1];
+  }
+  .atlwh_Full {
+    @apply absolute top-0 lrf1 w-full h-full;
+  }
+  .ltr .hero-img {
+    @apply lg:left-[2.43055555556vw] left-[6%];
+  }
+  .rtl .hero-img {
+    @apply lg:right-[2.43055555556vw] right-[6%];
+  }
+  .ltr .hero-small-cricle {
+    @apply lg:right-[2.08333333333vw] right-[5.335%];
+  }
+  .rtl .hero-small-cricle {
+    @apply lg:left-[2.08333333333vw] left-[5.335%];
+  }
+  .ltr .ml43 {
+    @apply lg:ml-[2.43055555556vw];
+  }
+  .ltr .mr43 {
+    @apply lg:mr-[2.43055555556vw];
+  }
+}
+.swiper-pagination-bullet {
+  background-color: #d9d9d9;
+}
+.swiper-pagination-bullet-active {
+  background-color: #41393d;
+}
+.swiper-pagination {
+  bottom: 0 !important;
+  top: unset !important;
+}
+.gallerySwiper .swiper-slide .Inter {
+  text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.87);
+  color: white;
+}
+.img-cover {
+  mix-blend-mode: hue;
+}
+.gallerySwiper .swiper-slide img {
+  object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  .swiper-pagination-bullet {
+    width: 1.11111111111vw;
+    height: 1.11111111111vw;
+  }
+}
+@media (max-width: 1024px) {
+  .swiper-pagination-bullet {
+    width: 3.85542168675vw;
+    height: 3.85542168675vw;
+  }
+}
