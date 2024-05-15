@@ -1,3 +1,4 @@
+AOS.init({ once: true });
 function toggleSidebar() {
     if (window.innerWidth < 1240) {
         const body = document.querySelector("body");
